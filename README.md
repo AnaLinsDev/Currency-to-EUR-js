@@ -4,5 +4,5 @@
 
 - feito para praticar o javascript puro
 
-- a aplicação converte 3 tipos de moedas (BRL, ESD, CAD) para o euro (EUR) ~ por enquanto
+- a aplicação converte 3 tipos de moedas (BRL, ESD, CAD) para o euro (EUR)
 
