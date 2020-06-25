@@ -22,10 +22,13 @@ function calcular(base,valor){
 
 function result(newres){
     var res = document.querySelector("h2.number");
-    res.firstChild.nodeValue = newres; 
+    var newresformatado = newres.toLocaleString('en-ie', { style: 'currency', currency: 'EUR' })
+    res.firstChild.nodeValue = newresformatado; 
 }
 
 function showdata(elements){
+    for (x in elements.rates) {
+        //console.log(x)
     if (type === 'CAD'){
          base = elements.rates.CAD
     }
@@ -35,6 +38,7 @@ function showdata(elements){
     else if (type === 'BRL'){
          base = elements.rates.BRL
     }
+}
     calcular(base, valor)
 }
 
